@@ -1,0 +1,64 @@
+Todo POM:
+Page Object Model is an automation approach or design pattern for any project.
+Page object Model also known as Page Chaining Model.
+we can integrate it with any Framework like (Data Driven & TestNG).
+Every page have own class & that class will contains (Web Elements or Object & Actions or Methods).
+Class or Page is OR (Object Repository), which means a collection of all elements and actions.
+POM Have layers:
+    1: Page Layer or Page Lib (Pages Package):
+        Contains Pages or class for every page
+    2: Test Layer (Test cases package):
+        Always create test package in test folder of project
+        Test layer will contains Test Cases for every class or page
+        Test layer will be written using TestNG annotations b/c we are writing test cases here.
+    Test layer & page layer have same number of classes
+    3: Base Class layer (Base package):
+        base class will be the parent of all classes & contains pre-requisites.
+    4: Config Layer (Config Package):
+        Config layer will contains environments variables & common properties.
+        Config will contains (Usernames, passwords, URLs, browser) & other common properties to all classes
+    5: Models for data (Test Data package):
+        These classes will help us to get & set data in storage like excel sheets or any other DB
+    6: Project Utilities (Util Package):
+        This will contains common use full methods for utilization in whole project.
+        All generic functions will be here
+    7: Test Reports (Reports Package):
+        Here we will place reports of our test in the form of (HTML, XML, TestNG) reports.
+
+Todo Steps for POM:
+1:  Create a Base class:
+    Base class will have all pre-requisites like:
+        initialization of web driver.
+        Properties file.
+        all test case configurations like:
+            maximize window()
+            PageLoadTime()
+            implicitWait()
+            deleteCookies()
+            getURl()
+
+    Base class will be the parent of all the classes in Page and Test Layer.
+
+
+Todo OR (Object Repository):
+A collections of object or web elements and Actions.
+A class can be said as object repository
+
+Todo Technologies used (Sample Java):
+Java :     As programming language
+Selenium: As automation framework
+TestNG: Creating test case
+Maven: A build tool
+Apachi POI API: Read & write data in excel files
+Extent Report: For Generating reports.
+Log4J API: For generating the logs
+Jenkins: For Continues Integration for triggering the builds
+GIT:    For maintaining the code
+Selenium Grid:   For parallel testing
+Browser:
+Platform: Windows
+VMs: For running test cases on cloud like (SouceLabs, Browser Stack)
+
+
+
+
